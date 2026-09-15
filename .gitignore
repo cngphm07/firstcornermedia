@@ -1,0 +1,11 @@
+tools/
+cache/
+manifest.json
+site_data.json
+download_log.txt
+failed.txt
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db

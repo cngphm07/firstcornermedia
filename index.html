@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khảm Media — Architecture Photography &amp; Films</title>
+<meta name="description" content="Khảm Media — studio nhiếp ảnh và phim kiến trúc. Residence, Hospitality, Showroom & Sale Gallery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <a class="logo" href="#top">KHẢM<span class="logo-dot">•</span>MEDIA</a>
+  <nav>
+    <a href="#photography" data-nav>Photography</a>
+    <a href="#films" data-nav>Films</a>
+    <a href="#about" data-nav>About</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-content">
+    <p class="hero-kicker reveal">Architecture — Photography &amp; Film</p>
+    <h1 class="hero-title">
+      <span class="reveal">Kiến trúc,</span>
+      <span class="reveal">trong ánh sáng</span>
+      <span class="reveal">&amp; hình khối<span class="accent-dot">.</span></span>
+    </h1>
+  </div>
+  <div class="hero-image reveal">
+    <img id="heroImage" src="" alt="Khảm Media Architecture" class="loaded">
+  </div>
+  <div class="hero-meta reveal">
+    <span>Hồ Chí Minh City</span>
+    <span class="hero-scroll">Scroll
+      <svg width="11" height="26" viewBox="0 0 11 26" fill="none"><path d="M5.5 0v24M1 20.5L5.5 25 10 20.5" stroke="currentColor" stroke-width="0.75"/></svg>
+    </span>
+    <span>Portfolio 2026</span>
+  </div>
+</section>
+
+<!-- PHOTOGRAPHY -->
+<section class="section" id="photography">
+  <div class="section-head reveal">
+    <h2>Photography</h2>
+    <div class="filters" id="filters"></div>
+  </div>
+  <div class="projects-grid" id="projectsGrid"></div>
+</section>
+
+<!-- FILMS -->
+    <section id="films" class="section">
+      <div class="section-head reveal">
+        <h2>Architecture Films.</h2>
+        <span class="section-note">Moving Images</span>
+      </div>
+      <div class="filters reveal" id="videoFilters" style="margin-bottom: 30px;"></div>
+      <div class="films-grid reveal" id="filmsGrid"></div>
+    </section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div class="reveal">
+      <h2>About</h2>
+    </div>
+    <div class="about-body reveal">
+      <p class="about-lead">Khảm Media là studio chuyên <em>nhiếp ảnh kiến trúc</em> và <em>phim kiến trúc</em> — ghi lại không gian qua ánh sáng, vật liệu và hình khối.</p>
+      <p>Chúng tôi làm việc cùng các chủ đầu tư, kiến trúc sư và đơn vị thiết kế nội thất, từ nhà ở riêng tư, khách sạn &amp; nghỉ dưỡng, đến showroom và sale gallery.</p>
+      <ul class="about-list">
+        <li><span>Architecture Photography</span></li>
+        <li><span>Interior Photography</span></li>
+        <li><span>Architecture Films</span></li>
+        <li><span>Construction Time-lapse</span></li>
+      </ul>
+      
+      <div class="team-grid reveal">
+        <div class="team-member">
+          <div class="team-photo"></div>
+          <h4 class="team-name">Thành viên 1</h4>
+          <p class="team-role">Founder / Photographer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-photo"></div>
+          <h4 class="team-name">Thành viên 2</h4>
+          <p class="team-role">Videographer</p>
+        </div>
+        <div class="team-member">
+          <div class="team-photo"></div>
+          <h4 class="team-name">Thành viên 3</h4>
+          <p class="team-role">Editor / Colorist</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top: 40px; display: flex; gap: 30px; flex-wrap: wrap;">
+        <a class="about-contact" href="mailto:hello@khammedia.vn">hello@khammedia.vn
+          <svg width="26" height="8" viewBox="0 0 26 8" fill="none"><path d="M0 4h24M21 1l3 3-3 3" stroke="currentColor" stroke-width="0.75"/></svg>
+        </a>
+        <a class="about-contact" href="tel:0971133309">0971 133 309
+          <svg width="26" height="8" viewBox="0 0 26 8" fill="none"><path d="M0 4h24M21 1l3 3-3 3" stroke="currentColor" stroke-width="0.75"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>KHẢM MEDIA © 2026</span>
+  <span>Photography &amp; Films — Hồ Chí Minh City</span>
+  <div style="display: flex; gap: 20px;">
+    <a href="tel:0971133309">0971 133 309</a>
+    <a href="mailto:hello@khammedia.vn">hello@khammedia.vn</a>
+  </div>
+</footer>
+
+<!-- PROJECT OVERLAY -->
+<div class="project-view" id="projectView" hidden>
+  <div class="project-topbar">
+    <button class="back-btn" id="backBtn">
+      <svg width="26" height="8" viewBox="0 0 26 8" fill="none"><path d="M26 4H2M5 1L2 4l3 3" stroke="currentColor" stroke-width="0.75"/></svg>
+      Photography
+    </button>
+    <span class="project-title" id="pvTitle"></span>
+    <span class="project-count" id="pvCount"></span>
+  </div>
+  <div class="project-gallery" id="pvGallery"></div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">
+    <svg width="18" height="18" viewBox="0 0 18 18"><path d="M1 1l16 16M17 1L1 17" stroke="currentColor" stroke-width="0.9"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">
+    <svg width="26" height="12" viewBox="0 0 26 12" fill="none"><path d="M26 6H2M7 1L2 6l5 5" stroke="currentColor" stroke-width="0.75"/></svg>
+  </button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">
+    <svg width="26" height="12" viewBox="0 0 26 12" fill="none"><path d="M0 6h24M19 1l5 5-5 5" stroke="currentColor" stroke-width="0.75"/></svg>
+  </button>
+  <span class="lb-counter" id="lbCounter"></span>
+</div>
+
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="videoModal" hidden>
+  <div class="video-modal-backdrop" id="videoBackdrop"></div>
+  <button class="lb-close vm-close" id="vmClose" aria-label="Close">
+    <svg width="18" height="18" viewBox="0 0 18 18"><path d="M1 1l16 16M17 1L1 17" stroke="currentColor" stroke-width="0.9"/></svg>
+  </button>
+  <div class="video-frame">
+    <iframe id="videoFrame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+  <p class="video-caption" id="videoCaption"></p>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
