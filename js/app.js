@@ -1,4 +1,4 @@
-// KHẢM MEDIA — app logic
+// FIRST CORNER MEDIA — app logic
 (function () {
   'use strict';
 

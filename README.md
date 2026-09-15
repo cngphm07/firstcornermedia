@@ -1,4 +1,4 @@
-# KHẢM MEDIA — Portfolio Website
+# FIRST CORNER MEDIA — Portfolio Website
 
 Website showcase nhiếp ảnh & phim kiến trúc, phong cách **minimalism**: nền trắng, chữ mảnh đen, hover điểm nhấn màu cam.
 
